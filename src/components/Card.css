@@ -1,0 +1,84 @@
+/* Card.css */
+
+.card-container {
+    padding: 1rem; 
+    border: 1px solid #e5e7eb; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
+    animation: fadeIn 1s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .loading-text {
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    animation: blink 1.5s linear infinite; 
+  }
+  
+  .card-title {
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    margin-bottom: 0.5rem; 
+  }
+  
+  .card-description {
+    color: #4b5563; 
+    margin-bottom: 1rem; 
+  }
+  
+  .button-container {
+    display: flex; 
+    gap: 1rem; 
+  }
+  
+  .button {
+    padding: 0.5rem 1rem; 
+    color: #fff; 
+    border-radius: 0.25rem; 
+    transition: background-color 0.2s, transform 0.2s; 
+  }
+  
+  .button-delete {
+    background-color: #ef4444; 
+  }
+  
+  .button-delete:hover {
+    background-color: #dc2626; 
+    transform: scale(1.1); 
+  }
+  
+  .button-edit {
+    background-color: #3b82f6; 
+  }
+  
+  .button-edit:hover {
+    background-color: #2563eb;
+    transform: scale(1.1); 
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
